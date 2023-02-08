@@ -5,8 +5,33 @@
     <title>Contato</title>
 </head>
 <body>
-    <form method="get" action="curriculo.html">
-        <input type="text" name="nome" />
+    <form>
+        <!--Campo de texto-->
+        <input type="text" name="nome" placeholder="Nome" /><br />
+        <!--Campo de email onde o navegador faz a verificação do formato email-->
+        <input type="email" name="email" placeholder="E-mail" /><br />
+        <!--Campo de telefone, no desktop não faz muita diferença, mas no mobile faz-->
+        <input type="tel" name="tel" placeholder="(xx) xxxxx-xxxx" /><br />
+        <!--Campo que aceita somente número-->
+        <input type="number" name="idade" placeholder="Idade" /><br />
+        <!--Campo de URL que o navegador verifica, parecido com o e-mail-->
+        <input type="url" name="linkedin" placeholder="LinkedIn" /><br />
+        <!--Slider que necessita colocar o alcance-->
+        Urgência <input type="range" name="urgencia" min=0 max=100 step=0.1/><br />
+        <!--Checkbox te permite selecionar vários-->
+        <input type="checkbox" name="dia-da-semana" value=2 /> Segunda-feira <br />
+        <input type="checkbox" name="dia-da-semana" value=4 /> Quarta-feira <br />
+        <input type="checkbox" name="dia-da-semana" value=6 /> Sexta-feira <br />
+        <!--Igual checkbox, mas permite selecionar apenas um-->
+        <input type="radio" name="horario" value="manha" /> Manhã <br />
+        <input type="radio" name="horario" value="tarde" /> Tarde <br />
+        <input type="radio" name="horario" value="noite" /> Noite <br />
+        <textarea cols="50" rows="10"></textarea><br />
+        <input list="cidade" name="cidade" />
+        <datalist id="cidade">
+            <option value="Joinville">Joinville</option>
+            <option value="Blumenau">Blumenau</option>
+            <option value="Florianopolis">Florianópolis</option>
+        </select>
     </form>
 </body>
-</html>
